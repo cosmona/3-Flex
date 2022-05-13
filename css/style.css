@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,700;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../img/hamburguesa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+h2 {
+  margin: 12px 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 12px 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
+  text-align: center;
+}
+
+form > fieldset > fieldset {
+  /* INGREDIENTES Y TAMAÑO*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-style: italic;
+  gap: 10px;
+}
+
+form > fieldset:nth-child(2) {
+  /* DATOS DE ENTREGA*/
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+form > fieldset:last-of-type {
+  /* METODO DE PAGO*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  font-style: italic;
+}
+
+select {
+  min-width: 200px;
+  padding: 11px;
+  font-weight: 700;
+}
+
+input[type="button"] {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(30, 61, 89);
+  color: rgb(255, 255, 255);
+  width: 80px;
+  font-style: normal;
+  font-weight: 700;
+}
