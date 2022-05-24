@@ -1,0 +1,4 @@
+{
+  "discord-chat.setUpIfDiscordChaStartWhenVSCodeOpened": true,
+  "liveServer.settings.port": 5501
+}

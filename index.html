@@ -6,80 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio Flex</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      function bajapan(id) {
+        const pan = document.getElementById(id);
+        pan.className = "anima";
+      }
+    </script>
   </head>
 
   <body>
-    <form action="#">
-      <fieldset>
-        <legend><h2>Personaliza tu hamburguesa</h2></legend>
+    <section id="container">
+      <form action="#">
         <fieldset>
-          <legend><h3>Ingredientes</h3></legend>
-          <label for="ingrediente1">Queso</label>
-          <input type="checkbox" name="ingrediente1" id="ingrediente1" />
+          <legend><h2>Personaliza tu hamburguesa</h2></legend>
+          <fieldset class="marco" id="entrega">
+            <legend>Datos de entrega</legend>
+            <label for="nombre">Nombre</label>
+            <input
+              oninput="bajapan('plato')"
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Ej.Samuel Rodríguez"
+              required
+            />
 
-          <label for="ingrediente2">Pimiento</label>
-          <input type="checkbox" name="ingrediente2" id="ingrediente2" />
+            <label for="Dirección">Dirección</label>
+            <input
+              oninput="bajapan('base')"
+              type="text"
+              name="Dirección"
+              id="Dirección"
+              placeholder="Ej.Rúa Real,1, A Coruña"
+              required
+            />
 
-          <label for="ingrediente3">Cebolla</label>
-          <input type="checkbox" name="ingrediente3" id="ingrediente3" />
+            <label for="telefono">Teléfono</label>
+            <input
+              oninput="bajapan('carne')"
+              type="tel"
+              name="telefono"
+              id="telefono"
+              required
+            />
 
-          <label for="ingrediente4">Jamón</label>
-          <input type="checkbox" name="ingrediente4" id="ingrediente4" />
+            <label for="instrucciones">Instrucciones especiales</label>
+            <textarea
+              name="instrucciones"
+              id="instrucciones"
+              rows="5"
+              cols="50"
+            >
+            </textarea>
+          </fieldset>
 
-          <label for="ingrediente5">Huevo</label>
-          <input type="checkbox" name="ingrediente5" id="ingrediente5" />
+          <fieldset class="marco">
+            <legend><h3>Ingredientes</h3></legend>
+            <label for="ingrediente1">Queso</label>
+            <input
+              oninput="bajapan('queso')"
+              type="checkbox"
+              name="ingrediente1"
+              id="ingrediente1"
+            />
+
+            <label for="ingrediente2">Pimiento</label>
+            <input
+              oninput="bajapan('pimientos')"
+              type="checkbox"
+              name="ingrediente2"
+              id="ingrediente2"
+            />
+
+            <label for="ingrediente3">Cebolla</label>
+            <input
+              oninput="bajapan('cebolla')"
+              type="checkbox"
+              name="ingrediente3"
+              id="ingrediente3"
+            />
+
+            <label for="ingrediente4">Jamón</label>
+            <input
+              oninput="bajapan('jamon')"
+              type="checkbox"
+              name="ingrediente4"
+              id="ingrediente4"
+            />
+
+            <label for="ingrediente5">Huevo</label>
+            <input
+              oninput="bajapan('huevo')"
+              type="checkbox"
+              name="ingrediente5"
+              id="ingrediente5"
+            />
+            <label for="ingrediente6">Pepinillos</label>
+            <input
+              oninput="bajapan('pepinillos')"
+              type="checkbox"
+              name="ingrediente6"
+              id="ingrediente6"
+            />
+          </fieldset>
+
+          <fieldset class="marco">
+            <legend><h3>Tamaño</h3></legend>
+            <label for="Tamano1">Pequeña</label>
+            <input type="radio" name="Tamano1" id="Tamano1" />
+
+            <label for="Tamano2">Mediana</label>
+            <input type="radio" name="Tamano2" id="Tamano2" />
+
+            <label for="Tamano3">Grande</label>
+            <input type="radio" name="Tamano3" id="Tamano3" />
+          </fieldset>
         </fieldset>
 
         <fieldset>
-          <legend><h3>Tamaño</h3></legend>
-          <label for="Tamano1">Pequeña</label>
-          <input type="radio" name="Tamano1" id="Tamano1" />
-
-          <label for="Tamano2">Mediana</label>
-          <input type="radio" name="Tamano2" id="Tamano2" />
-
-          <label for="Tamano3">Grande</label>
-          <input type="radio" name="Tamano3" id="Tamano3" />
+          <legend><h2>Método de pago</h2></legend>
+          <select oninput="bajapan('tapa')" id="pago" name="pago" required>
+            <option value="Tarjeta">Elige un metodo de pago</option>
+            <option value="Tarjeta">Tarjeta de credito</option>
+            <option value="Paypal">Paypal</option>
+            <option value="Efectivo">Efectivo</option>
+          </select>
+          <input type="button" value="Enviar" />
         </fieldset>
-      </fieldset>
-
-      <fieldset>
-        <legend><h2>Datos de entrega</h2></legend>
-        <label for="nombre">Nombre</label>
-        <input
-          type="text"
-          name="nombre"
-          id="nombre"
-          placeholder="Ej.Samuel Rodríguez"
-          required
-        />
-
-        <label for="Dirección">Dirección</label>
-        <input
-          type="text"
-          name="Dirección"
-          id="Dirección"
-          placeholder="Ej.Rúa Real,1, A Coruña"
-          required
-        />
-
-        <label for="telefono">Teléfono</label>
-        <input type="tel" name="telefono" id="telefono" required />
-
-        <label for="instrucciones">Instrucciones especiales</label>
-        <textarea name="instrucciones" id="instrucciones" rows="5" cols="50">
-        </textarea>
-      </fieldset>
-
-      <fieldset>
-        <legend><h2>Método de pago</h2></legend>
-        <select id="pago" name="pago" required>
-          <option value="Tarjeta">Tarjeta de credito</option>
-          <option value="Paypal">Paypal</option>
-          <option value="Efectivo">Efectivo</option>
-        </select>
-        <input type="button" value="Enviar" />
-      </fieldset>
-    </form>
+      </form>
+      <section id="hamburguesa">
+        <div id="plato"></div>
+        <div id="base"></div>
+        <div id="carne"></div>
+        <div id="queso"></div>
+        <div id="pimientos"></div>
+        <div id="cebolla"></div>
+        <div id="jamon"></div>
+        <div id="huevo"></div>
+        <div id="pepinillos"></div>
+        <div id="tapa"></div>
+      </section>
+    </section>
   </body>
 </html>
