@@ -317,3 +317,15 @@ input[type="button"] {
     opacity: 1;
   }
 }
+
+@media (max-width: 1100px) {
+  #container {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+  }
+  form {
+    padding: 0;
+    width: 100vw;
+  }
+}
