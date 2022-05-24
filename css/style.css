@@ -107,6 +107,10 @@ input {
   width: 200px;
 }
 
+textarea {
+  background-color: rgba(7, 7, 2, 0.692);
+  color: white;
+}
 select {
   min-width: 200px;
   padding: 11px;
@@ -138,7 +142,7 @@ select {
   background-repeat: no-repeat;
   background-image: url(../img/plato.png);
   position: absolute;
-  top: 620px;
+  top: 64vh;
   z-index: 1;
   animation-duration: 1s;
   animation-iteration-count: 1;
