@@ -9,323 +9,347 @@
   --amarillo: rgb(212, 160, 14);
 }
 
-body {
-  height: 100vh;
-  background-color: black;
-  color: white;
-}
-
-#container {
-  background-image: url(../img/mesa.png),
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  height: 100vh;
-  width: 90vw;
-  justify-content: center;
-}
-
-h2 {
-  text-transform: uppercase;
-  color: var(--amarillo);
-  text-shadow: 1px 1px 0px white;
-  font-family: "Bungee", cursive;
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-h3 {
-  margin: 5px 0;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 700;
-}
-
-form {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding: 0px 50px;
-  margin-top: 40px;
-  align-items: center;
-}
-
-fieldset {
-  border: none;
-  text-align: center;
-}
-
-form > fieldset > fieldset {
-  /* INGREDIENTES Y TAMAÑO*/
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-style: italic;
-  gap: 5px;
-}
-
-form > fieldset:nth-child(2) {
-  /* DATOS DE ENTREGA*/
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-style: italic;
-  font-weight: 700;
-}
-
-form > fieldset:last-of-type {
-  /* METODO DE PAGO*/
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#entrega input {
-  width: 400px;
-}
-
-input {
-  padding: 10px;
-  font-style: italic;
-  border: 0px;
-  border-radius: 30px;
-  background-color: rgba(7, 7, 2, 0.692);
-  color: white;
-}
-
-.containerInline {
-  display: flex;
-  flex-direction: row;
-}
-
-#telefono {
-  width: 200px;
-}
-
-textarea {
-  background-color: rgba(7, 7, 2, 0.692);
-  color: white;
-  border-radius: 30px;
-  width: 100%;
-}
-select {
-  min-width: 200px;
-  padding: 11px;
-  font-weight: 700;
-}
-
-.marco {
-  border: 1px solid white;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  padding: 20px;
-}
-
-#entrega {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#hamburguesa {
-  width: 50%;
-}
-
-#plato {
-  width: 500px;
-  transform: rotate(2deg);
-  height: 366px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(../img/plato.png);
-  position: absolute;
-  top: 64vh;
-  z-index: 1;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  opacity: 0;
-}
-
-#base {
-  position: absolute;
-  width: 200px;
-  height: 0px;
-  top: 62vh;
-  margin-left: 105px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../img/base.png);
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  opacity: 0;
-  z-index: 1;
-}
-
-#carne {
-  position: absolute;
-  width: 200px;
-  height: 0px;
-  top: 62vh;
-  margin-left: 105px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../img/carne.png");
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  opacity: 0;
-  z-index: 1;
-}
-
-#queso {
-  position: absolute;
-  width: 175px;
-  height: 0px;
-  top: 59vh;
-  margin-left: 105px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../img/queso.png");
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  opacity: 1;
-  z-index: 1;
-  margin-left: 115px;
-}
-
-#pimientos {
-  position: absolute;
-  width: 140px;
-  height: 0px;
-  top: 59vh;
-  margin-left: 105px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../img/pimientos.png");
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  opacity: 1;
-  z-index: 1;
-  margin-left: 131px;
-}
-
-#cebolla {
-  position: absolute;
-  width: 175px;
-  height: 0px;
-  top: 59vh;
-  margin-left: 105px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../img/cebolla.png");
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  opacity: 1;
-  z-index: 1;
-  margin-left: 115px;
-}
-#jamon {
-  position: absolute;
-  width: 165px;
-  height: 0px;
-  top: 57vh;
-  transform: rotate(20deg);
-  margin-left: 109px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../img/jamon.png");
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  opacity: 1;
-  z-index: 1;
-}
-
-#huevo {
-  position: absolute;
-  width: 175px;
-  height: 0px;
-  top: 55vh;
-  margin-left: 105px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../img/huevo.png");
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  opacity: 1;
-  z-index: 1;
-  margin-left: 115px;
-}
-
-#pepinillos {
-  position: absolute;
-  width: 143px;
-  height: 0px;
-  top: 56vh;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../img/pepinillos.png);
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  opacity: 1;
-  z-index: 1;
-  margin-left: 132px;
-}
-
-#tapa {
-  position: absolute;
-  width: 207px;
-  height: 0px;
-  top: 52vh;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../img/tapa.png);
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  opacity: 1;
-  z-index: 1;
-  margin-left: 100px;
-}
-
-.anima {
-  height: 200px !important;
-
-  animation: baja;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in;
-}
-
-input[type="button"] {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  background-color: rgb(236, 214, 17);
-  color: rgb(255, 255, 255);
-  width: 80px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-@keyframes baja {
-  0% {
+  body {
+    height: 100vh;
+    background-color: black;
+    color: white;
   }
-  100% {
-    transform: translateY(10%);
-    opacity: 1;
+  
+    h2 {
+      text-transform: uppercase;
+      color: var(--amarillo);
+      text-shadow: 1px 1px 0px white;
+      font-family: "Bungee", cursive;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    h3 {
+      margin: 5px 0;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 700;
+    }
+  #container {
+    background-image: url(../img/mesa.png),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 100vh;
+    width: 90vw;
+    justify-content: center;
   }
-}
+
+    form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 50px;
+      margin-top: 40px;
+      align-items: center;
+    }
+
+      fieldset {
+        border: none;
+        text-align: center;
+      }
+
+      /* INGREDIENTES Y TAMAÑO*/
+      form > fieldset > fieldset {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-style: italic;
+        gap: 5px;
+      }
+
+      /* DATOS DE ENTREGA*/
+      form > fieldset:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* METODO DE PAGO*/
+      form > fieldset:last-of-type {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #entrega input {
+        width: 400px;
+      }
+
+      input {
+        padding: 10px;
+        font-style: italic;
+        border: 0px;
+        border-radius: 30px;
+        background-color: rgba(7, 7, 2, 0.692);
+        color: white;
+      }
+
+      #telefono {
+        width: 200px;
+      }
+
+      textarea {
+        background-color: rgba(7, 7, 2, 0.692);
+        color: white;
+        border-radius: 30px;
+        width: 100%;
+      }
+      select {
+        min-width: 200px;
+        padding: 11px;
+        font-weight: 700;
+      }
+
+      .marco {
+        border: 1px solid white;
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        padding: 20px;
+      }
+
+      #entrega {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+    #hamburguesa {
+      width: 50%;
+      height: 100%;
+    }
+
+      #plato {
+        width: 500px;
+        transform: rotate(2deg);
+        height: 366px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../img/plato.png);
+        position: absolute;
+        top: 64vh;
+        z-index: 1;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 0;
+      }
+
+      #base {
+        position: absolute;
+        width: 200px;
+        height: 0px;
+        top: 62vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/base.png);
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      #carne {
+        position: absolute;
+        width: 200px;
+        height: 0px;
+        top: 62vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/carne.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      #queso {
+        position: absolute;
+        width: 175px;
+        height: 0px;
+        top: 59vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/queso.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 115px;
+      }
+
+      #pimientos {
+        position: absolute;
+        width: 140px;
+        height: 0px;
+        top: 59vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/pimientos.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 131px;
+      }
+
+      #cebolla {
+        position: absolute;
+        width: 175px;
+        height: 0px;
+        top: 59vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/cebolla.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 115px;
+      }
+      #jamon {
+        position: absolute;
+        width: 165px;
+        height: 0px;
+        top: 57vh;
+        transform: rotate(20deg);
+        margin-left: 109px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/jamon.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+      }
+
+      #huevo {
+        position: absolute;
+        width: 175px;
+        height: 0px;
+        top: 55vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/huevo.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 115px;
+      }
+
+      #pepinillos {
+        position: absolute;
+        width: 143px;
+        height: 0px;
+        top: 56vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/pepinillos.png);
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 132px;
+      }
+
+      #tapa {
+        position: absolute;
+        width: 207px;
+        height: 0px;
+        top: 54vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/tapa.png);
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 100px;
+      }
+
+      .anima {
+        height: 200px !important;
+
+        animation: baja;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+      }
+
+      input[type="button"] {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: rgb(236, 214, 17);
+        color: rgb(255, 255, 255);
+        width: 80px;
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      @keyframes baja {
+        0% {
+        }
+        100% {
+          transform: translateY(10%);
+          opacity: 1;
+        }
+      }
 
 @media (max-width: 1100px) {
+  
+  body {
+    min-height: 100vh;
+  }
+
   #container {
     flex-direction: column;
     justify-content: flex-start;
     width: 100vw;
   }
+
   form {
     padding: 0;
+    margin-top: 0;
     width: 100vw;
+  }
+
+  #hamburguesa {
+    width: 50%;
+    height: 100%;
+    top: 98px;
+    left: 61px;
+    position: relative;
+}
+  .ing {
+  top: 0vh !important;
+
+  }
+  #pimientos,#cebolla,
+  #jamon,#huevo,#pepinillos,    
+  #queso {
+    top: -2vh !important;
+    
+  }
+  #tapa{
+    top: -7vh !important;
   }
 }

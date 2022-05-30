@@ -5,17 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio Flex</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script>
+    <link rel="stylesheet" href="./css/style2.css" />
+    <!--     <link rel="stylesheet" href="./css/style.css" />
+ -->    <script>
       function bajapan(id) {
         const pan = document.getElementById(id);
-        pan.className = "anima";
+        pan.className = "anima ing";
       }
     </script>
   </head>
-
+  
   <body>
     <section id="container">
+      <section id="hamburguesa">
+        <div class="ing" id="plato"></div>
+        <div class="ing" id="base"></div>
+        <div class="ing" id="carne"></div>
+        <div class="ing" id="queso"></div>
+        <div class="ing" id="pimientos"></div>
+        <div class="ing" id="cebolla"></div>
+        <div class="ing" id="jamon"></div>
+        <div class="ing" id="huevo"></div>
+        <div class="ing" id="pepinillos"></div>
+        <div class="ing" id="tapa"></div>
+      </section>
       <form action="#">
         <fieldset>
           <legend><h2>Personaliza tu hamburguesa</h2></legend>
@@ -60,8 +73,8 @@
             </textarea>
           </fieldset>
 
-          <fieldset class="marco">
-            <legend><h3>Ingredientes</h3></legend>
+          <fieldset class="marco" id="ingredientes">
+            <legend>Ingredientes</legend>
             <label for="ingrediente1">Queso</label>
             <input
               oninput="bajapan('queso')"
@@ -110,7 +123,7 @@
             />
           </fieldset>
 
-          <fieldset class="marco">
+      <!--     <fieldset class="marco">
             <legend><h3>Tamaño</h3></legend>
             <label for="Tamano1">Pequeña</label>
             <input type="radio" name="Tamano" id="Tamano1" checked />
@@ -120,11 +133,11 @@
 
             <label for="Tamano3">Grande</label>
             <input type="radio" name="Tamano" id="Tamano3" />
-          </fieldset>
+          </fieldset> -->
         </fieldset>
 
         <fieldset>
-          <legend><h2>Método de pago</h2></legend>
+          <legend><h3>Método de pago</h3></legend>
           <select oninput="bajapan('tapa')" id="pago" name="pago" required>
             <option value="Tarjeta">Elige un metodo de pago</option>
             <option value="Tarjeta">Tarjeta de credito</option>
@@ -134,18 +147,6 @@
           <input type="button" value="Enviar" />
         </fieldset>
       </form>
-      <section id="hamburguesa">
-        <div id="plato"></div>
-        <div id="base"></div>
-        <div id="carne"></div>
-        <div id="queso"></div>
-        <div id="pimientos"></div>
-        <div id="cebolla"></div>
-        <div id="jamon"></div>
-        <div id="huevo"></div>
-        <div id="pepinillos"></div>
-        <div id="tapa"></div>
-      </section>
     </section>
   </body>
 </html>
