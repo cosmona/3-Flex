@@ -44,7 +44,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
+	height: 100vh;
 }
 
 /*& FORMULARIOS */
@@ -122,44 +122,234 @@ form > fieldset:nth-child(2) {
   }
 
 	#plato {
-		min-width: 300px;
-		min-height: 175px;
-        max-width: 400px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(../img/plato.png);
-		margin: 0 auto;
+		min-width: 386px;
+    min-height: 175px;
+    max-width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/plato.png);
+    margin: 0 auto;
+    position: absolute;
+    top: 66vh;
+    left: 2vw;
 	}
 
 	#base {
-	 
-	}
+        position: absolute;
+        width: 200px;
+        height: 0px;
+        top: 62vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/base.png);
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 0;
+        z-index: 1;
+      }
 
-	#carne {
-	 
-	}
+      #carne {
+        position: absolute;
+        width: 200px;
+        height: 0px;
+        top: 62vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/carne.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 0;
+        z-index: 1;
+      }
 
-	#queso {
-	
-	}
+      #queso {
+        position: absolute;
+        width: 175px;
+        height: 0px;
+        top: 59vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/queso.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 115px;
+      }
 
-	#pimientos {
-	
-	}
+      #pimientos {
+        position: absolute;
+        width: 140px;
+        height: 0px;
+        top: 59vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/pimientos.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 131px;
+      }
 
-	#cebolla {
-	 
-	}
-	#jamon {
-	  
-	}
+      #cebolla {
+        position: absolute;
+        width: 175px;
+        height: 0px;
+        top: 59vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/cebolla.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 115px;
+      }
+      #jamon {
+        position: absolute;
+        width: 165px;
+        height: 0px;
+        top: 57vh;
+        transform: rotate(20deg);
+        margin-left: 109px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/jamon.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+      }
 
-	#huevo {
-		}
+      #huevo {
+        position: absolute;
+        width: 175px;
+        height: 0px;
+        top: 55vh;
+        margin-left: 105px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/huevo.png");
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 115px;
+      }
 
-	#pepinillos {
-		}
+      #pepinillos {
+        position: absolute;
+        width: 143px;
+        height: 0px;
+        top: 56vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/pepinillos.png);
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 132px;
+      }
 
-	#tapa {
-	  	}
+      #tapa {
+        position: absolute;
+        width: 207px;
+        height: 0px;
+        top: 54vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/tapa.png);
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        opacity: 1;
+        z-index: 1;
+        margin-left: 100px;
+      }
 
+      .anima {
+        height: 200px !important;
+
+        animation: baja;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+      }
+
+      input[type="button"] {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: rgb(236, 214, 17);
+        color: rgb(255, 255, 255);
+        width: 80px;
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      @keyframes baja {
+        0% {
+        }
+        100% {
+          transform: translateY(10%);
+          opacity: 1;
+        }
+      }
+
+@media (max-width: 1100px) {
+  
+  body {
+    min-height: 100vh;
+  }
+
+  #container {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+  }
+
+  form {
+    padding: 0;
+    margin-top: 0;
+    width: 100vw;
+  }
+
+  #hamburguesa {
+	width: 50%;
+    /* height: 100%; */
+    top: 617px;
+    left: -54px;
+    position: relative;
+}
+
+#plato {
+    min-width: 386px;
+    min-height: 175px;
+    max-width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/plato.png);
+    margin: 0 auto;
+    position: absolute;
+    top: 66vh;
+    left: 4vw;
+}
+  .ing {
+  top: 0vh !important;
+
+  }
+  #pimientos,#cebolla,
+  #jamon,#huevo,#pepinillos,    
+  #queso {
+    top: -2vh !important;
+    
+  }
+  #tapa{
+    top: -7vh !important;
+  }
+}
