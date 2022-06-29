@@ -120,12 +120,17 @@
         padding: 20px;
       }
 
-      #entrega {
-        width: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+textarea {
+  background-color: rgba(7, 7, 2, 0.692);
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+}
+select {
+  min-width: 200px;
+  padding: 11px;
+  font-weight: 700;
+}
 
     #hamburguesa {
       width: 50%;
