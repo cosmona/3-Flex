@@ -1,129 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio Flex</title>
-    <link rel="stylesheet" href="./css/style2.css" />
-    <!--     <link rel="stylesheet" href="./css/style.css" />
- -->    <script>
-      function bajapan(id) {
-        const pan = document.getElementById(id);
-        pan.className = "anima ing";
-      }
-    </script>
-  </head>
-  
-  <body>
-    <section id="container">
-      <section id="hamburguesa">
-        <div class="ing" id="plato"></div>
-        <div class="ing" id="base"></div>
-        <div class="ing" id="carne"></div>
-        <div class="ing" id="queso"></div>
-        <div class="ing" id="pimientos"></div>
-        <div class="ing" id="cebolla"></div>
-        <div class="ing" id="jamon"></div>
-        <div class="ing" id="huevo"></div>
-        <div class="ing" id="pepinillos"></div>
-        <div class="ing" id="tapa"></div>
-      </section>
-      <form action="#">
-        <fieldset>
-          <legend><h2>Personaliza tu hamburguesa</h2></legend>
-          <fieldset class="marco" id="entrega">
-            <legend>Datos de entrega</legend>
-            <label for="nombre">Nombre</label>
-            <input
-              oninput="bajapan('plato')"
-              type="text"
-              name="nombre"
-              id="nombre"
-              placeholder="Ej.Samuel Rodríguez"
-              required
-            />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio Flex</title>
+		<link rel="stylesheet" href="./css/style2.css" />
+		<!--     <link rel="stylesheet" href="./css/style.css" />
+ -->
+		<script>
+			function bajapan(id) {
+				const pan = document.getElementById(id);
+				pan.className = "anima ing";
+			}
+		</script>
+	</head>
 
-            <label for="Dirección">Dirección</label>
-            <input
-              oninput="bajapan('base')"
-              type="text"
-              name="Dirección"
-              id="Dirección"
-              placeholder="Ej.Rúa Real,1, A Coruña"
-              required
-            />
+	<body>
+		<section id="container">
+			<section id="hamburguesa">
+				<div class="ing" id="plato"></div>
+				<div class="ing" id="base"></div>
+				<div class="ing" id="carne"></div>
+				<div class="ing" id="queso"></div>
+				<div class="ing" id="pimientos"></div>
+				<div class="ing" id="cebolla"></div>
+				<div class="ing" id="jamon"></div>
+				<div class="ing" id="huevo"></div>
+				<div class="ing" id="pepinillos"></div>
+				<div class="ing" id="tapa"></div>
+			</section>
+			<form action="#">
+				<fieldset>
+					<legend><h2>Personaliza tu hamburguesa</h2></legend>
+					<fieldset class="marco" id="entrega">
+						<legend>Datos de entrega</legend>
+						<label for="nombre">Nombre</label>
+						<input
+							oninput="bajapan('plato')"
+							type="text"
+							name="nombre"
+							id="nombre"
+							placeholder="Ej.Samuel Rodríguez"
+							required
+						/>
 
-            <label for="telefono">Teléfono</label>
-            <input
-              oninput="bajapan('carne')"
-              type="tel"
-              name="telefono"
-              id="telefono"
-              required
-            />
+						<label for="Dirección">Dirección</label>
+						<input
+							oninput="bajapan('base')"
+							type="text"
+							name="Dirección"
+							id="Dirección"
+							placeholder="Ej.Rúa Real,1, A Coruña"
+							required
+						/>
 
-            <label for="instrucciones">Instrucciones especiales</label>
-            <textarea
-              name="instrucciones"
-              id="instrucciones"
-              rows="5"
-              cols="50"
-            >
-            </textarea>
-          </fieldset>
+						<label for="telefono">Teléfono</label>
+						<input
+							oninput="bajapan('carne')"
+							type="tel"
+							name="telefono"
+							id="telefono"
+							required
+						/>
 
-          <fieldset class="marco" id="ingredientes">
-            <legend>Ingredientes</legend>
-            <label for="ingrediente1">Queso</label>
-            <input
-              oninput="bajapan('queso')"
-              type="checkbox"
-              name="ingrediente1"
-              id="ingrediente1"
-            />
+						<label for="instrucciones"
+							>Instrucciones especiales</label
+						>
+						<textarea
+							name="instrucciones"
+							id="instrucciones"
+							rows="5"
+							cols="50"
+						>
+						</textarea>
+					</fieldset>
 
-            <label for="ingrediente2">Pimiento</label>
-            <input
-              oninput="bajapan('pimientos')"
-              type="checkbox"
-              name="ingrediente2"
-              id="ingrediente2"
-            />
+					<fieldset class="marco" id="ingredientes">
+						<legend>Ingredientes</legend>
+						<label for="ingrediente1">Queso</label>
+						<input
+							oninput="bajapan('queso')"
+							type="checkbox"
+							name="ingrediente1"
+							id="ingrediente1"
+						/>
 
-            <label for="ingrediente3">Cebolla</label>
-            <input
-              oninput="bajapan('cebolla')"
-              type="checkbox"
-              name="ingrediente3"
-              id="ingrediente3"
-            />
+						<label for="ingrediente2">Pimiento</label>
+						<input
+							oninput="bajapan('pimientos')"
+							type="checkbox"
+							name="ingrediente2"
+							id="ingrediente2"
+						/>
 
-            <label for="ingrediente4">Jamón</label>
-            <input
-              oninput="bajapan('jamon')"
-              type="checkbox"
-              name="ingrediente4"
-              id="ingrediente4"
-            />
+						<label for="ingrediente3">Cebolla</label>
+						<input
+							oninput="bajapan('cebolla')"
+							type="checkbox"
+							name="ingrediente3"
+							id="ingrediente3"
+						/>
 
-            <label for="ingrediente5">Huevo</label>
-            <input
-              oninput="bajapan('huevo')"
-              type="checkbox"
-              name="ingrediente5"
-              id="ingrediente5"
-            />
-            <label for="ingrediente6">Pepinillos</label>
-            <input
-              oninput="bajapan('pepinillos')"
-              type="checkbox"
-              name="ingrediente6"
-              id="ingrediente6"
-            />
-          </fieldset>
+						<label for="ingrediente4">Jamón</label>
+						<input
+							oninput="bajapan('jamon')"
+							type="checkbox"
+							name="ingrediente4"
+							id="ingrediente4"
+						/>
 
-      <!--     <fieldset class="marco">
+						<label for="ingrediente5">Huevo</label>
+						<input
+							oninput="bajapan('huevo')"
+							type="checkbox"
+							name="ingrediente5"
+							id="ingrediente5"
+						/>
+						<label for="ingrediente6">Pepinillos</label>
+						<input
+							oninput="bajapan('pepinillos')"
+							type="checkbox"
+							name="ingrediente6"
+							id="ingrediente6"
+						/>
+					</fieldset>
+
+					<!--     <fieldset class="marco">
             <legend><h3>Tamaño</h3></legend>
             <label for="Tamano1">Pequeña</label>
             <input type="radio" name="Tamano" id="Tamano1" checked />
@@ -134,19 +137,24 @@
             <label for="Tamano3">Grande</label>
             <input type="radio" name="Tamano" id="Tamano3" />
           </fieldset> -->
-        </fieldset>
+				</fieldset>
 
-        <fieldset>
-          <legend><h3>Método de pago</h3></legend>
-          <select oninput="bajapan('tapa')" id="pago" name="pago" required>
-            <option value="Tarjeta">Elige un metodo de pago</option>
-            <option value="Tarjeta">Tarjeta de credito</option>
-            <option value="Paypal">Paypal</option>
-            <option value="Efectivo">Efectivo</option>
-          </select>
-          <input type="button" value="Enviar" />
-        </fieldset>
-      </form>
-    </section>
-  </body>
+				<fieldset>
+					<legend><h3>Método de pago</h3></legend>
+					<select
+						oninput="bajapan('tapa')"
+						id="pago"
+						name="pago"
+						required
+					>
+						<option value="Tarjeta">Elige un metodo de pago</option>
+						<option value="Tarjeta">Tarjeta de credito</option>
+						<option value="Paypal">Paypal</option>
+						<option value="Efectivo">Efectivo</option>
+					</select>
+					<input type="button" value="Enviar" />
+				</fieldset>
+			</form>
+		</section>
+	</body>
 </html>
